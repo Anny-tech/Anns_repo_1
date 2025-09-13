@@ -6,9 +6,7 @@ COPY requirements.txt requirements.txt
 
 RUN pip install -r requirements.txt
 
-ENV secretpassword=annaflies2025
-
-WORKDIR /home/digifort/Documents/Data_Management_F25/contrans2025
+WORKDIR /home/digifort/Documents/Data_Management_F25/Anns_repo_1
 
 EXPOSE 8888
 
