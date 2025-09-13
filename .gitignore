@@ -1,0 +1,12 @@
+__pyacache__/
+*.py[codz]
+# Environments
+.env
+.envrc
+env/
+venv/
+# Data files
+*.csv
+*.json
+# Jupyter notebooks
+.ipynb_checkpoints
