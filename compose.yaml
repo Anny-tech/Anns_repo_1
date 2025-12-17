@@ -1,0 +1,29 @@
+services:
+  annsjob:
+    image: annsdocker1
+    env_file:
+      - .env
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/home/digifort/Documents/Data_Management_F25/Anns_repo_1/
+  postgres:
+    image: postgres
+    
+    #Question 1: What environmental variables are required for this image?
+    env_file: 
+      - .env
+
+    #Question 2: Does the software have a part (inside the container) it runs on by default?
+    ports:
+      - "5434:5432"
+
+    #Question 3: What folder inside the container stores the data you need to save?
+    volumes:
+      - postgresdata:/var/lib/postgresql/18/docker
+
+volumes:
+  postgresdata:
+
+
+#networks:
